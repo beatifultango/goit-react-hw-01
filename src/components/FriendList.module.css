@@ -1,0 +1,28 @@
+body {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+.list {
+  padding: 10%;
+  display: block;
+  width: 200px;
+  height: 200px;
+  font-size: 20px;
+  border-radius: 20%;
+  border: 1px solid gray;
+}
+
+.friend {
+  margin: 20px;
+  text-align: center;
+}
+
+.img {
+  width: 100px;
+}

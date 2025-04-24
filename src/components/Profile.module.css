@@ -1,5 +1,42 @@
-.profile-card{
-    width: 100px;
-    height:auto;
-    border:2px solid gray;
+body{
+    margin: 0;
+    padding: 5%;
+    font-size: 14px;
+
+
+}
+
+.profileCard {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  
+  border-radius: 10px;
+  border: 1px solid gray;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.profileCard img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: center;
+  gap: 8%;
+}
+span {
+  display: block;
+  justify-content: center;
+}
+
+.tag{
+    text-align:center;
 }
