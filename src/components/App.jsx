@@ -2,6 +2,8 @@ import React from "react";
 import Profile from "./Profile";
 import friends from "./friendList.json";
 import FriendList from "./FriendList";
+import transactions from "./TransactionHistory.json";
+import TransactionHistory from "./TransactionHistory";
 
 import userData from "./userData.json";
 const App = () => {
@@ -27,6 +29,10 @@ const App = () => {
             </li>
           ))}
         </ul>
+      </div>
+
+      <div>
+        <TransactionHistory />
       </div>
     </>
   );
