@@ -9,14 +9,14 @@ ul {
   gap: 30px;
 }
 .list {
-  padding: 10%;
+  padding: 5%;
   display: block;
-  width: 200px;
-  height: 200px;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
   font-size: 20px;
   border-radius: 20%;
   border: 1px solid gray;
-  overflow: hidden;
 }
 
 .friend {
@@ -24,6 +24,6 @@ ul {
   text-align: center;
 }
 
-.img {
+.avatar {
   width: 100px;
 }

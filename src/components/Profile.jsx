@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./Profile.module.css";
+
 const Profile = ({ name, tag, location, image, stats }) => {
   return (
     <div>
-      <div className={styles.profileCard}>
+      <div class={styles.profileCard}>
         <img src={image} alt="User Avatar" />
         <div>
           <p class={styles.name}>{name}</p>

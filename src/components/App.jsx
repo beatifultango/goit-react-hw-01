@@ -1,7 +1,7 @@
 import React from "react";
 import Profile from "./Profile";
-import friends from "./friendList.json";
-import FriendList from "./FriendList";
+import friends from "./FriendList.json";
+import FriendList from "./FriendListItem";
 import transactions from "./TransactionHistory.json";
 import TransactionHistory from "./TransactionHistory";
 
@@ -16,24 +16,9 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
+      <FriendList friends={friends} />
 
-      <div>
-        <ul>
-          {friends.map((friend) => (
-            <li key={friend.id}>
-              <FriendList
-                name={friend.name}
-                avatar={friend.avatar}
-                isOnline={friend.isOnline}
-              />
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <div>
-        <TransactionHistory />
-      </div>
+      <TransactionHistory item={transactions} />
     </>
   );
 };
