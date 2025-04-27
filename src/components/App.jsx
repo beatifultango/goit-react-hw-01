@@ -1,7 +1,7 @@
 import React from "react";
 import Profile from "./Profile";
 import friends from "./FriendList.json";
-import FriendList from "./FriendListItem";
+import FriendList from "./FriendList";
 import transactions from "./TransactionHistory.json";
 import TransactionHistory from "./TransactionHistory";
 
@@ -18,7 +18,7 @@ const App = () => {
       />
       <FriendList friends={friends} />
 
-      <TransactionHistory item={transactions} />
+      <TransactionHistory transactions={transactions} />
     </>
   );
 };

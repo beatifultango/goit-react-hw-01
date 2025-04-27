@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./TransactionHistory.module.css";
-import transactions from "./TransactionHistory.json";
 
-const TransactionHistory = () => {
+
+const TransactionHistory = ({transactions}) => {
   return (
     <>
       <table className={styles.table}>
@@ -15,7 +15,7 @@ const TransactionHistory = () => {
           </tr>
         </thead>
         <tbody>
-          {transactions.map(({ id, type, currency, amount }) => {
+          {transactions.map(({ id,type,amount,currency }) => {
             return (
               <tr key={id}>
                 <td>{type}</td>
